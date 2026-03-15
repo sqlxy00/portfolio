@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>相澤 | ポートフォリオ</title>
+  <meta name="description" content="相澤のポートフォリオサイトです。Webサイト制作、UI/UXデザイン、WordPress構築などに対応しています。">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 演出用要素 -->
+  <div class="scroll-progress" id="progress-bar"></div>
+  <div class="spotlight" id="spotlight"></div>
+
+  <!-- ローディング画面 -->
+  <div id="loader">
+    <div class="loader-count" id="loader-percent">00</div>
+    <div class="loader-bar">
+      <div class="loader-progress" id="loader-progress-bar"></div>
+    </div>
+    <p class="loader-label">INITIALIZING INTERFACE</p>
+  </div>
+
+  <header class="header">
+    <div class="header__inner">
+      <a href="#top" class="logo">AIZAWA.</a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#service">SERVICE</a></li>
+          <li><a href="#works">WORKS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+      <button class="mode-toggle" id="theme-toggle">LIGHT MODE</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="hero__inner">
+        <p class="hero__sub" data-aos>CREATIVE DEVELOPER</p>
+        <h1 class="hero__title" data-aos><span class="hero__line">想いを<span class="hero__accent">形</span>に。</span><br><span class="hero__line">伝わる<span class="hero__accent">デザイン</span>を。</span></h1>
+        <p class="hero__text" data-aos>お客様の想いを整理し、<br>
+          目的を達成するための<br>
+          最適なビジュアルと設計を提供します。<br>
+          見た目の美しさだけでなく、<br>
+          使いやすさと成果にこだわります。</p>
+        <div class="hero__actions" data-aos>
+          <a href="#contact" class="btn btn--primary">START A PROJECT</a>
+          <a href="#works" class="btn btn--secondary">VIEW WORKS</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="grid grid--2-layout">
+          <div data-aos class="about-visual">
+            <img src="images/IMG_9008.png" alt="[プロフィール画像]">
+          </div>
+          <div data-aos>
+            <p class="section-label">ABOUT ME</p>
+            <h2 class="section-title">ロジカルな思考と<br>感性をかけ合わせる</h2>
+            <p class="hero__text">東京を拠点に活動。<br>
+              Webサイト制作からUI設計、<br>
+              ブランド構築まで、<br>
+              一貫した世界観作りを得意としています。</p>
+            <p class="hero__text small">単なる「制作物」ではなく、<br>
+              ビジネスの課題を解決するための<br>
+              「ツール」として機能するWebサイトをご提案します。</p>
+            <div class="tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">PHP</span>
+              <span class="tag">React</span>
+              <span class="tag">UI/UX</span>
+              <span class="tag">WordPress</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="service">
+      <div class="container">
+        <div class="section-header" data-aos>
+          <p class="section-label">OUR SERVICES</p>
+          <h2 class="section-title">ビジネスを加速させる解決策</h2>
+        </div>
+        <div class="grid grid--4">
+          <div class="card" data-aos>
+            <h3>Webデザイン</h3>
+            <p>見やすく伝わりやすいレイアウト設計とWebデザインを制作します。</p>
+          </div>
+          <div class="card" data-aos>
+            <h3>UI / UX設計</h3>
+            <p>ユーザーが迷わず操作できるナビゲーションや導線を設計します。</p>
+          </div>
+          <div class="card" data-aos>
+            <h3>フロントエンド開発</h3>
+            <p>HTML / CSS / JavaScript を用いたWebサイトの実装が可能です。</p>
+          </div>
+          <div class="card" data-aos>
+            <h3>サイト改善</h3>
+            <p>レスポンシブ対応やUI改善を行い、使いやすいサイトへ調整します。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="works">
+      <div class="container">
+        <div class="section-header" data-aos>
+          <p class="section-label">SELECTED WORKS</p>
+          <h2 class="section-title">制作実績</h2>
+        </div>
+        <!-- 2枚並びで改行されるレイアウト -->
+        <div class="grid grid--2">
+          <div class="card card--work" data-aos>
+            <div class="work-thumb">
+              <img src="images/527shots_so.png" alt="[制作事例1]">
+            </div>
+            <div class="work-body">
+              <p class="work-category">Attendance Management App</p>
+              <h3>勤怠管理カレンダー</h3>
+              <p>シフト管理をしやすく見やすいカレンダーを制作しました。</p>
+            </div>
+            <a href="https://sqlxy00.github.io/-/" class="card-link"></a>
+          </div>
+          <div class="card card--work" data-aos>
+            <div class="work-thumb">
+              <img src="images/636shots_so.png" alt="[制作事例2]">
+            </div>
+            <div class="work-body">
+              <p class="work-category">EC SITE</p>
+              <h3>LUNA SILVER</h3>
+              <p>シルバーアクセサリーのECサイトを制作しました。</p>
+            </div>
+            <a href="https://sqlxy00.github.io/silveraccessory/" class="card-link"></a>
+          </div>
+                    <div class="card card--work" data-aos>
+            <div class="work-thumb">
+              <img src="images/712shots_so.png" alt="[制作事例3]">
+            </div>
+            <div class="work-body">
+              <p class="work-category">Corporate Website</p>
+              <h3>SAKURA CAREER</h3>
+              <p>キャリア支援のためのブランドサイトを制作しました。</p>
+            </div>
+            <a href="https://sqlxy00.github.io/sakura-career/" class="card-link"></a>
+          </div>
+          <div class="card card--work" data-aos>
+            <div class="work-thumb">
+              <img src="images/771shots_so.png" alt="[制作事例4]">
+            </div>
+            <div class="work-body">
+              <p class="work-category">BRAND SITE</p>
+              <h3>NEXT LEVEL</h3>
+              <p>次世代のキャリア支援プラットフォームを制作しました。</p>
+            </div>
+            <a href="https://sqlxy00.github.io/businessschool-LP/" class="card-link"></a>
+          </div>
+          <div class="card card--work" data-aos>
+            <div class="work-thumb">
+              <img src="images/833shots_so.png" alt="[制作事例5]">
+            </div>
+            <div class="work-body">
+              <p class="work-category">Brand Website</p>
+              <h3>LUMIÈRE</h3>
+              <p>カフェの公式サイトを制作しました。</p>
+            </div>
+            <a href="https://sqlxy00.github.io/cafe/" class="card-link"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="contact">
+      <div class="container centered" data-aos>
+        <p class="section-label">GET IN TOUCH</p>
+        <h2 class="section-title"><span class="no-break">素晴らしいプロジェクトを</span><br>一緒に作りましょう</h2>
+        <a href="mailto:hello@example.com" class="btn btn--primary">SAY HELLO</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <p class="logo">AIZAWA.</p>
+      <div class="footer__social">
+        <a href="#" target="_blank">INSTAGRAM</a>
+        <a href="#" target="_blank">GITHUB</a>
+        <a href="#" target="_blank">X (TWITTER)</a>
+      </div>
+      <p class="footer__copy">© 2026 AIZAWA DESIGN. ALL RIGHTS RESERVED.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
